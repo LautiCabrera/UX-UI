@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Arquitectura</title>
+</head>
+
+<body>
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="container-fluid">
+        <h1 class="title">Diseño de Gráficas para Interfaces de Usuario</h1>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th></th>
+                        <th>Botón</th>
+                        <th>Combobox o Select</th>
+                        <th>Tabla</th>
+                        <th>Cuadro de Texto</th>
+                        <th>Imágenes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ejemplo 1<br>Banco</td>
+                        <td><button class="btn bank">Enviar</button></td>
+                        <td>
+                            <select class="form-control bank-select">
+                                <option>Cuenta de Ahorros</option>
+                                <option>Cuenta Corriente</option>
+                                <option>Tarjeta de Crédito</option>
+                            </select>
+                        </td>
+                        <td>
+                            <table class="table table-sm table-bordered bank-table">
+                                <thead>
+                                    <tr>
+                                        <th>Fecha</th>
+                                        <th>Descripción</th>
+                                        <th>Monto</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01/01/2023</td>
+                                        <td>Depósito</td>
+                                        <td>$1000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>02/01/2023</td>
+                                        <td>Retiro</td>
+                                        <td>$500</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td><input type="text" class="form-control input-bank" placeholder="Nombre completo"></td>
+                        <td><img src="https://www.bbva.com.ar/content/dam/public-web/argentina/images/openpay.jpg.img.2400.1709233652363.jpg"
+                                alt="Banco" class="img-fluid"></td>
+                    </tr>
+                    <tr>
+                        <td>Ejemplo 2<br>Kids</td>
+                        <td><button class="rainbow kids">Jugar</button></td>
+                        <td>
+                            <select class="form-control kids kids-select">
+                                <option value="games"><i class="fas fa-gamepad"></i> Juegos</option>
+                                <option value="comics"><i class="fas fa-book-open"></i> Historietas</option>
+                                <option value="cartoons"><i class="fas fa-tv"></i> Caricaturas</option>
+                            </select>
+                        </td>
+                        <td>
+                            <table class="table table-sm table-bordered kids kids-table">
+                                <thead>
+                                    <tr>
+                                        <th>Juego</th>
+                                        <th>Nivel</th>
+                                        <th>Puntuación</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Juego 1</td>
+                                        <td>5</td>
+                                        <td>3000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Juego 2</td>
+                                        <td>3</td>
+                                        <td>1500</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td><input type="text" class="form-control kids kids-input" placeholder="Nombre del juego"></td>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Mundo_Gaturro-Logo.png"
+                                alt="Kids" class="img-fluid"></td>
+                    </tr>
+                    <tr>
+                        <td>Ejemplo 3<br>Red Social</td>
+                        <td><button class="btn cta">Publicar</button></td>
+                        <td>
+                            <div class="custom-select-social-container">
+                                <select class="custom-select-social">
+                                    <option>Amigos</option>
+                                    <option>Familia</option>
+                                    <option>Trabajo</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>
+                            <table class="table table-sm table-bordered table-social">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Publicación</th>
+                                        <th>Likes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Usuario 1</td>
+                                        <td>Foto de viaje</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Usuario 2</td>
+                                        <td>Nuevo trabajo</td>
+                                        <td>200</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td><textarea class="form-control input-social" rows="3"
+                                placeholder="Escribe tu publicación"></textarea>
+                        </td>
+                        <td><img src="https://dinahosting.com/blog/upload/2021/03/rrrss-pymes.jpg" alt="Red Social"
+                                class="img-fluid"></td>
+                    </tr>
+                    <tr>
+                        <td>Ejemplo 4<br>Ingeniería</td>
+                        <td><button class="btn btn-warning">Calcular</button></td>
+                        <td>
+                            <select class="form-control select-ing">
+                                <option>Mecánica</option>
+                                <option>Eléctrica</option>
+                                <option>Civil</option>
+                            </select>
+                        </td>
+                        <td>
+                            <table class="table table-sm table-bordered table-ing">
+                                <thead>
+                                    <tr>
+                                        <th>Proyecto</th>
+                                        <th>Estado</th>
+                                        <th>Progreso</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Puente</td>
+                                        <td>En progreso</td>
+                                        <td>70%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Edificio</td>
+                                        <td>Completado</td>
+                                        <td>100%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td><input type="text" class="form-control input-ing" placeholder="Nombre del proyecto"></td>
+                        <td><img src="https://blogs.unitec.mx/hubfs/Imported_Blog_Media/consejos-utiles-que-puedes-seguir-si-quieres-estudiar-ingenieria-1-Dec-17-2022-07-17-16-5431-PM.jpg"
+                                alt="Ingeniería" class="img-fluid"></td>
+                    </tr>
+                    <tr>
+                        <td>Ejemplo 5<br>Salud</td>
+                        <td><button class="btn medical">Agendar</button></td>
+                        <td>
+                            <select class="form-control select-medical">
+                                <option>Médico General</option>
+                                <option>Pediatra</option>
+                                <option>Cardiólogo</option>
+                            </select>
+                        </td>
+                        <td>
+                            <table class="table table-sm table-bordered table-medical">
+                                <thead>
+                                    <tr>
+                                        <th>Paciente</th>
+                                        <th>Fecha</th>
+                                        <th>Hora</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Juan Pérez</td>
+                                        <td>10/10/2023</td>
+                                        <td>10:00 AM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>María López</td>
+                                        <td>11/10/2023</td>
+                                        <td>11:00 AM</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td><textarea class="form-control input-medical" rows="3"
+                                placeholder="Motivo de la consulta"></textarea></td>
+                        <td><img src="https://concepto.de/wp-content/uploads/2013/08/diagnostico-min-e1505489496655.jpg"
+                                alt="Salud" class="img-fluid"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>
